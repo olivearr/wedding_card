@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-bg-image {
+  background-image: url(../main_img_sample.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-info {
+  text-align: center;
+  z-index: 999;
+}
+
+.page p {
+  font-size: 66px;
+}
+
+.page:nth-child(2) {
+  background: lightgreen no-repeat center/cover;
+}
+
+.page:nth-child(3) {
+  background: lightskyblue no-repeat center/cover;
+}
+
+.page:nth-child(4) {
+  background: darkblue no-repeat center/cover;
+}
