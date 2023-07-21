@@ -5,7 +5,7 @@
 }
 
 .main-bg-image {
-  background-image: url(../main_img_sample.jpg);
+  background-image: url(../img/pictures/main_img_sample.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22,10 +22,6 @@
 
 .page:nth-child(2) {
   background: lightgreen no-repeat center/cover;
-}
-
-.page:nth-child(3) {
-  background: lightskyblue no-repeat center/cover;
 }
 
 .page:nth-child(4) {
