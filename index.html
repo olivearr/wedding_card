@@ -2,10 +2,11 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <title>재성♡민경 결혼해요!</title>
   <link rel="stylesheet" href="css/pureFullPage.min.css">
   <link rel="stylesheet" href="css/index.css">
+  <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=pxjiq1izzy"></script>
 </head>
 <body>
   <div id="pureFullPage">
@@ -19,10 +20,12 @@
     <div class="page"></div>
     <div class="page">
       <div class="map-info">
-        <iframe
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.2005368103473!2d126.78508277738541!3d37.64448917201874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9ac9f99b176b%3A0xda0eeb1429a7f5e!2z642UIO2FjOudvOyKpCDsm6jrlKkgJiDtjIzti7A!5e0!3m2!1sko!2skr!4v1689967304155!5m2!1sko!2skr"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe> -->
+        <div id="map"></div>
         <div class="map-list">
           <div class="map-btn">
             <a href="http://kko.to/TdP3AA6e1l" target="_blank" rel="noopener noreferrer">
@@ -45,6 +48,6 @@
     <div class="page"></div>
   </div>
   <script src="js/pureFullPage.min.js"></script>
-  <script>new PureFullPage();</script>
+  <script src="js/index.js"></script>
 </body>
 </html>
