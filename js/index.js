@@ -1,8 +1,16 @@
 new PureFullPage();
 
-var naverMapOptions = {
-  center: new naver.maps.LatLng(37.3595704, 127.105399),
-  zoom: 10
-};
+const img_modal = document.getElementById('gallery-modal');
+const gpzs = document.getElementsByClassName('gallery-photo-zone');
+const modal_img = document.getElementById("gallery-modal-img");
 
-var map = new naver.maps.Map('map', naverMapOptions);
+for(var i = 0; i < gpzs.length; i++) {
+  gpzs[i].getElementsByTagName('img')[0].addEventListener('click', (e) => {
+    img_modal.style.display = 'block';
+    modal_img.src = e.target.src;
+  });
+}
+
+img_modal.addEventListener('click', () => {
+  img_modal.style.display = 'none';
+});

@@ -1,0 +1,132 @@
+.thanks-content {
+  width: 100%;
+  height: 100%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thanks-h1 {
+  font-family: 'MaruBuri-Bold';
+  font-size: 20px;
+  color: #4A73B8;
+  text-align: center;
+  padding: 0 0.5em;
+  border-bottom: 1px solid #4A73B8;
+}
+
+.thanks-h2 {
+  font-family: 'MaruBuri-Bold';
+  font-size: 17;
+  color: #3C495F;
+  text-align: center;
+  padding: 0 0.5em;
+  border-bottom: 1px solid #3C495F;
+}
+
+.thanks-h3 {
+  font-family: 'MaruBuri-Regular';
+  font-size: 17px;
+  color: #3C495F;
+}
+
+.thanks-married-zone {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px
+}
+
+.thanks-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.thanks-icon-zone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.parents-type {
+  font-family: 'MaruBuri-Regular';
+  font-size: 14px;
+  color: #3C495F;
+}
+
+.parents-name {
+  font-family: 'MaruBuri-Regular';
+  font-size: 17px;
+  color: #3C495F;
+}
+
+.thanks-account-btn {
+  height: 52px;
+}
+
+.thanks-account-text-zone {
+  border-radius: 7px;
+}
+
+.thanks-account-text {
+  height: 100%;
+  font-family: 'MaruBuri-SemiBold';
+  font-size: 15px;
+  color: white;
+}
+
+.thanks-account-text-zone::before {
+  content: '\e1f3';
+  height: 100%;
+  font-family: 'Font Awesome 6 Free';
+  border: 1px solid;
+  border-radius: 7px 0 0 7px;
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  background-color: gray;
+  font-family: 'MaruBuri-Regular';
+  font-size: 5px;
+  color: white;
+  text-align: center;
+}
+
+.make-role {
+  font-size: 12px;
+}
+
+.make-name {
+  font-size: 22px;
+}
+
+.groom-color {
+  color: #8CCFD5;
+}
+
+.groom-border-color {
+  border-color: #8CCFD5;
+}
+
+.groom-bg-color {
+  background-color: #8CCFD5;
+}
+
+.bride-color {
+  color: #F3A08C;
+}
+
+.bride-border-color {
+  border-color: #F3A08C;
+}
+
+.bride-bg-color {
+  background-color: #F3A08C;
+}
