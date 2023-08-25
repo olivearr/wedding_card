@@ -1,69 +1,98 @@
+@font-face {
+  font-family: 'KCC-eunyoung';
+  src: url('../fonts/KCC-eunyoung-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GangwonEduHyeonokT_OTFMediumA';
+  src: url('../fonts/GangwonEduHyeonokT_OTFMediumA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '210-Soopsokeseo-R';
+  src: url('../fonts/210-Soopsokeseo-R.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url('../fonts/MaruBuri-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaruBuri-SemiBold';
+  src: url('../fonts/MaruBuri-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaruBuri-Bold';
+  src: url('../fonts/MaruBuri-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.main-bg-image {
-  background-image: url(../img/pictures/main_img_sample.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.main-info {
+.page-title {
+  font-family: 'MaruBuri-Bold';
+  font-size: 20px;
+  color: #4A73B8;
   text-align: center;
-  z-index: 999;
+  padding: 0 0.5em;
+  border-bottom: 1px solid #4A73B8;
+  margin: 20px 0;
 }
 
-.map-info {
-  flex-direction: column;
+/* media query ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+/* @media screen and (min-width: 1601px) {
+  .map-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #naver-map {
+    width: 50vw;
+  }
+
+  .map-info {
+    margin-left: 20px;
+  }
 }
 
-.google-map {
-  position: relative;
-  width: 100%;
-  height: 0%;
-  padding-bottom: 75%;
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  .map-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #naver-map {
+    width: 976px;
+  }
 }
 
-.google-map > iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #naver-map {
+    width: 720px;
+  }
 }
 
-.map-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 16px;
-}
-
-.map-btn {
-  width: 32px;
-  height: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.map-icon {
-  width: 32px;
-  height: 32px;
-}
-
-.page p {
-  font-size: 66px;
-}
-
-.page:nth-child(2) {
-  background: lightgreen no-repeat center/cover;
-}
-
-.page:nth-child(3) {
-  background: lightyellow no-repeat center/cover;
-}
-
-.page:nth-child(4) {
-  background: darkblue no-repeat center/cover;
-}
+@media screen and (max-width: 767px) {
+  #naver-map {
+    width: 432px;
+  }
+} */
+/*▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
