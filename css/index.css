@@ -40,11 +40,20 @@
   font-style: normal;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body {
+  margin: 0;
+  background-color: #333;
+  touch-action: pan-y;
+
+  --360-view-width-ratio: calc(360 / 390);
+  --430-view-width-ratio: calc(430 / 390);
+}
+
+#wedding-card {
+  width: 100%;
+  min-width: 340px;
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 .page-title {
