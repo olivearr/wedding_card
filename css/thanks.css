@@ -4,6 +4,8 @@
   flex-direction: column;
   align-items: center;
   background-color: white;
+  --account-btn-font-size: 12px;
+  --button-svg-heigth: 120%;
 }
 
 .thanks-h1 {
@@ -17,7 +19,7 @@
 
 .thanks-h2 {
   font-family: 'MaruBuri-Bold';
-  font-size: 17;
+  font-size: 17px;
   color: #3C495F;
   text-align: center;
   padding: 0 0.5em;
@@ -64,37 +66,43 @@
   color: #3C495F;
 }
 
-.thanks-account-btn {
-  height: 52px;
+.button {
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  padding: 5px 5px 5px 40px;
+  position: relative;
+  border-radius: 8px;
+  letter-spacing: 0.7px;
+  color: #fff;
+  font-family: 'MaruBuri-SemiBold', sans-serif;
+  cursor: pointer;
+  box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
 }
 
-.thanks-account-text-zone {
-  border-radius: 7px;
+.button__svg {
+  position: absolute;
+  overflow: visible;
+  bottom: 4px;
+  left: 0;
 }
 
-.thanks-account-text {
-  height: 100%;
-  font-family: 'MaruBuri-SemiBold';
-  font-size: 15px;
-  color: white;
-}
-
-.thanks-account-text-zone::before {
-  content: '\e1f3';
-  height: 100%;
-  font-family: 'Font Awesome 6 Free';
-  border: 1px solid;
-  border-radius: 7px 0 0 7px;
-  background-color: white;
+.last-thanks {
+  font-family: 'MaruBuri-Regular';
+  font-size: 20px;
+  color: #4A73B8;
+  text-align: center;
+  margin: 20px 0;
 }
 
 footer {
   width: 100%;
-  background-color: gray;
+  background-color: #B9B9B9;
   font-family: 'MaruBuri-Regular';
   font-size: 5px;
   color: white;
   text-align: center;
+  margin-top: 20px;
 }
 
 .make-role {
@@ -103,6 +111,133 @@ footer {
 
 .make-name {
   font-size: 22px;
+}
+
+.groom-account-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.groom-account-modal.show {
+  display: block;
+}
+
+.groom-account-modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: #FFF9EA;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #FBE6B6;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.bride-account-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bride-account-modal.show {
+  display: block;
+}
+
+.bride-account-modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: #FFF9EA;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #FBE6B6;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.modal-h1 {
+  font-family: 'MaruBuri-Bold';
+  font-size: 17px;
+  color: #3C495F;
+  text-align: center;
+  padding: 0 0.5em;
+  border-bottom: 1px solid #3C495F;
+}
+
+.modal-account-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-account-zone {
+  width: 200%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.modal-account-name {
+  font-family: 'MaruBuri-Regular';
+  font-size: 18px;
+  color: #3C495F;
+}
+
+.modal-account-role {
+  font-size: 15px;
+}
+
+.modal-account-copy-btn {
+  width: 50%;
+  height: 100%;
+  font-family: 'MaruBuri-Regular';
+  font-size: 18px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-account-close {
+  font-family: 'MaruBuri-SemiBold';
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  background-color: #3C495F;
+  padding: 10px;
 }
 
 .groom-color {
@@ -127,4 +262,26 @@ footer {
 
 .bride-bg-color {
   background-color: #F3A08C;
+}
+
+@media screen and (max-width:  359px) {
+  .button {
+    font-size: calc(var(--account-btn-font-size) * var(--360-view-width-ratio));
+    padding-left: 30px;
+  }
+
+  .button__svg {
+    height: calc(var(--button-svg-heigth) * var(--360-view-width-ratio));
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .button {
+    font-size: calc(var(--account-btn-font-size) * var(--430-view-width-ratio));
+    padding-left: 40px;
+  }
+
+  .button__svg {
+    height: calc(var(--button-svg-heigth) * var(--430-view-width-ratio));
+  }
 }
