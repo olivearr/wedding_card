@@ -49,6 +49,17 @@ body {
   --430-view-width-ratio: calc(430 / 390);
 }
 
+footer p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #B9B9B9;
+  font-family: 'MaruBuri-Regular';
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
 #wedding-card {
   width: 100%;
   min-width: 340px;

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.13 35.13">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .8px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-width: .8px;
+      }
+    </style>
+  </defs>
+  <g id="_그룹_69" data-name="그룹 69">
+    <rect id="_사각형_61" data-name="사각형 61" class="cls-2" x="5.62" y="9.76" width="23.9" height="12.33"/>
+    <path id="_패스_83" data-name="패스 83" class="cls-1" d="m22.99,23.28l-14.41,2.84c-.46.09-.91-.2-1-.66,0,0,0,0,0,0l-.42-2.09"/>
+    <path id="_패스_84" data-name="패스 84" class="cls-2" d="m13.33,15.93c0-2.34,1.9-4.24,4.24-4.24s4.24,1.9,4.24,4.24-1.9,4.24-4.24,4.24-4.24-1.9-4.24-4.24h0Z"/>
+    <circle id="_타원_28" data-name="타원 28" class="cls-2" cx="10.39" cy="15.93" r=".63"/>
+    <circle id="_타원_29" data-name="타원 29" class="cls-2" cx="24.74" cy="15.93" r=".63"/>
+    <path id="_패스_85" data-name="패스 85" class="cls-2" d="m6.31,9.76h2.38c0,1.7-1.37,3.07-3.07,3.07v-2.38c0-.38.31-.69.69-.69,0,0,0,0,0,0Z"/>
+    <path id="_패스_86" data-name="패스 86" class="cls-2" d="m5.62,21.4v-2.38h0c1.7,0,3.07,1.37,3.07,3.07h-2.38c-.38,0-.69-.31-.69-.69,0,0,0,0,0,0Z"/>
+    <path id="_패스_87" data-name="패스 87" class="cls-2" d="m28.82,22.09h-2.38c0-1.7,1.37-3.07,3.07-3.07v2.38c0,.38-.31.69-.69.69h0Z"/>
+    <path id="_패스_88" data-name="패스 88" class="cls-2" d="m29.52,10.45v2.38h0c-1.7,0-3.07-1.37-3.07-3.07h2.38c.38,0,.69.31.69.69h0Z"/>
+  </g>
+</svg>

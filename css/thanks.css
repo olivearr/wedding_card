@@ -8,6 +8,16 @@
   --button-svg-heigth: 120%;
 }
 
+.thanks-h {
+  font-family: 'MaruBuri-Bold';
+  font-size: 20px;
+  color: #4A73B8;
+  text-align: center;
+  padding: 0 0.5em;
+  border-bottom: 1px solid #4A73B8;
+  margin: 80px 0 20px 0;
+}
+
 .thanks-h1 {
   font-family: 'MaruBuri-Bold';
   font-size: 20px;
@@ -35,17 +45,26 @@
 .thanks-married-zone {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  column-gap: 10px
+  row-gap: 50px;
 }
 
 .thanks-zone {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
+}
+
+.thanks-utility-zone {
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .thanks-icon-zone {
@@ -54,37 +73,31 @@
   justify-content: center;
 }
 
-.parents-type {
+.person-type {
   font-family: 'MaruBuri-Regular';
-  font-size: 14px;
+  font-size: 16px;
   color: #3C495F;
 }
 
-.parents-name {
+.person-name {
   font-family: 'MaruBuri-Regular';
-  font-size: 17px;
+  font-size: 20px;
   color: #3C495F;
 }
 
 .button {
   border: none;
   outline: none;
-  margin: 20px 0;
-  padding: 5px 5px 5px 40px;
+  margin-top: 5px;
+  padding: 5px 1em;
   position: relative;
   border-radius: 8px;
   letter-spacing: 0.7px;
   color: #fff;
   font-family: 'MaruBuri-SemiBold', sans-serif;
+  font-size: 20px;
   cursor: pointer;
   box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
-}
-
-.button__svg {
-  position: absolute;
-  overflow: visible;
-  bottom: 4px;
-  left: 0;
 }
 
 .last-thanks {
@@ -92,17 +105,7 @@
   font-size: 20px;
   color: #4A73B8;
   text-align: center;
-  margin: 20px 0;
-}
-
-footer {
-  width: 100%;
-  background-color: #B9B9B9;
-  font-family: 'MaruBuri-Regular';
-  font-size: 5px;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
+  margin: 80px 0 20px;
 }
 
 .make-role {
@@ -262,26 +265,4 @@ footer {
 
 .bride-bg-color {
   background-color: #F3A08C;
-}
-
-@media screen and (max-width:  359px) {
-  .button {
-    font-size: calc(var(--account-btn-font-size) * var(--360-view-width-ratio));
-    padding-left: 30px;
-  }
-
-  .button__svg {
-    height: calc(var(--button-svg-heigth) * var(--360-view-width-ratio));
-  }
-}
-
-@media screen and (min-width: 360px) {
-  .button {
-    font-size: calc(var(--account-btn-font-size) * var(--430-view-width-ratio));
-    padding-left: 40px;
-  }
-
-  .button__svg {
-    height: calc(var(--button-svg-heigth) * var(--430-view-width-ratio));
-  }
 }

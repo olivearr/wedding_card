@@ -8,11 +8,18 @@
   background-color: white;
 }
 
-.info-h1 {
+.info-date-h {
   font-family: 'MaruBuri-Bold';
   font-size: 22px;
   color: #4A73B8;
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+.info-route-h {
+  font-family: 'MaruBuri-Bold';
+  font-size: 22px;
+  color: #4A73B8;
+  margin-top: 80px;
 }
 
 .info-h2 {
@@ -28,11 +35,11 @@
 }
 
 .calendar {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
   border-top: 1px solid #4A73B8;
-  margin-top: 20px;
-  padding: 10px 40px 0;
+  margin: 20px 40px 0;
+  padding: 16px 0 0 5px;
   box-sizing: border-box;
 }
 
@@ -46,7 +53,7 @@
   font-family: 'MaruBuri-Regular';
   font-size: 13px;
   color: #4A73B8;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 .rough-map {
@@ -62,16 +69,12 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .map-link {
-  min-width: 16px;
-  width: 10vw;
-  max-width: 32px;
-  min-height: 16px;
-  height: 10vw;
-  max-height: 32px;
+  width: 48px;
+  height: 48px;
 }
 
 .map-icon {
