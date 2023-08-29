@@ -1,6 +1,10 @@
 .main-content {
-  width: 100%;
-  height: 654px;
+  /* width: 100%;
+  height: 654px; */
+  width: auto;
+  min-height: 654px;
+  height: 100vh;
+  max-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,7 +13,7 @@
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 7px 20px 10px;
 
   --summary-font-size: 10px;
   --star-font-size: 60px;
@@ -79,8 +83,8 @@
   color: #FDD928;
   text-shadow: 1px 2px 3px #1E3326;
   word-break: keep-all;
-  margin: 10px 0;
-  box-sizing: border-box;
+  /* margin: 10px 0;
+  box-sizing: border-box; */
 }
 
 .main-break {
