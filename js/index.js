@@ -14,21 +14,25 @@ const brideModalAccountClose = document.getElementById('bride-modal-account-clos
 let currentImageIdx = 0;
 
 imageView.addEventListener('click', function() {
-  this.style.display = "none";
-  imageBox.style.display = "none";
+  this.style.display = 'none';
+  imageBox.style.display = 'none';
 });
 
 gpzs.forEach(function(btn, index){
   btn.addEventListener('click', function() {
-    imageView.style.display = "block";
-    imageBox.style.display = "block";
+    imageView.style.display = 'block';
+    imageBox.style.display = 'flex';
+    imageBox.style.flexDirection = 'column';
+    imageBox.style.justifyContent = 'center';
+    imageBox.style.alignItems = 'center';
     currentImageIdx = index;
-    currentImageDisplay(currentImageIdx);
+    currentImageDisplay();
   })
 });
 
-function currentImageDisplay(position){
-  imageBox.style.background = `url(img/pictures/org/gallery_0${currentImageIdx}.jpg) center/cover no-repeat`;
+function currentImageDisplay() {
+  // imageBox.style.background = `url(img/pictures/org/gallery_0${currentImageIdx}.jpg) center/cover no-repeat`;
+  imageBox.getElementsByTagName('img')[0].src = `img/pictures/org/gallery_0${currentImageIdx}.jpg`;
 }
 
 prevBtn.addEventListener('click', () => {
