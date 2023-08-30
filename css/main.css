@@ -11,9 +11,9 @@
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-  padding: 7px 20px 10px;
+  padding: 7px 20px 14px;
 
-  --summary-font-size: 10px;
+  --summary-font-size: 12px;
   --star-font-size: 60px;
   --title-font-size: 90px;
 }
@@ -64,10 +64,11 @@
 
 .main-family {
   font-family: 'KCC-eunyoung';
-  font-size: 16px;
+  font-size: 18px;
   color: #FEE743;
-  text-shadow: 1px 4px 6px #1E3326;
-  margin: 8px 0;
+  text-shadow: 1px -2px 2px #000000;
+  margin: 0 0 5px 0;
+  padding: 0;
 }
 
 .main-info {
@@ -77,33 +78,19 @@
   flex-direction: row;
   justify-content: space-between;
   font-family: 'MaruBuri-Bold';
-  font-size: 12px;
+  font-size: 15px;
   color: #FDD928;
   text-shadow: 1px 2px 3px #1E3326;
   word-break: keep-all;
-  /* margin: 10px 0;
-  box-sizing: border-box; */
-}
-
-.main-break {
-  display: none;
 }
 
 @media screen and (max-width:  359px) {
-  .main-summary {
-    visibility: hidden;
-  }
-
   .main-star {
     font-size: calc(var(--star-font-size) * var(--360-view-width-ratio));
   }
 
   .main-title {
     font-size: calc(var(--title-font-size) * var(--360-view-width-ratio));
-  }
-
-  .main-break {
-    display: inline;
   }
 }
 
@@ -118,5 +105,11 @@
 
   .main-title {
     font-size: calc(var(--title-font-size) * var(--430-view-width-ratio));
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .main-summary {
+    visibility: hidden;
   }
 }

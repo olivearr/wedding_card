@@ -10,6 +10,7 @@ const groomAccountModal = document.querySelector('.groom-account-modal');
 const brideAccountModal = document.querySelector('.bride-account-modal');
 const groomModalAccountClose = document.getElementById('groom-modal-account-close');
 const brideModalAccountClose = document.getElementById('bride-modal-account-close');
+const accountCopyBtn = document.querySelectorAll('.modal-account-copy-btn');
 
 let currentImageIdx = 0;
 
@@ -18,7 +19,7 @@ imageView.addEventListener('click', function() {
   imageBox.style.display = 'none';
 });
 
-gpzs.forEach(function(btn, index){
+gpzs.forEach((btn, index) => {
   btn.addEventListener('click', function() {
     imageView.style.display = 'block';
     imageBox.style.display = 'flex';
@@ -31,7 +32,6 @@ gpzs.forEach(function(btn, index){
 });
 
 function currentImageDisplay() {
-  // imageBox.style.background = `url(img/pictures/org/gallery_0${currentImageIdx}.jpg) center/cover no-repeat`;
   imageBox.getElementsByTagName('img')[0].src = `img/pictures/org/gallery_0${currentImageIdx}.jpg`;
 }
 
@@ -81,4 +81,19 @@ brideAccountModal.addEventListener('click', (e) => {
 
 brideModalAccountClose.addEventListener('click', (e) => {
   brideAccountModal.classList.toggle('show');
+});
+
+accountCopyBtn.forEach((e, index) => {
+  e.addEventListener('click', () => {
+    window.navigator.clipboard.writeText(
+      accountCopyBtn[index].previousElementSibling.children[1].textContent.replaceAll('-', '')
+    ).then(
+      () => {
+        alert(`${accountCopyBtn[index].previousElementSibling.children[0].textContent} 계좌 복사 완료!`);
+      },
+      () => {
+        alert('계좌 복사 실패! 아래 연락처로 문의 부탁드립니다!');
+      }
+    );
+  });
 });
