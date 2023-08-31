@@ -92,7 +92,19 @@ accountCopyBtn.forEach((e, index) => {
         alert(`${accountCopyBtn[index].previousElementSibling.children[0].textContent} 계좌 복사 완료!`);
       },
       () => {
-        alert('계좌 복사 실패! 아래 연락처로 문의 부탁드립니다!');
+        try {
+          const tempAccountText = document.createElement("textarea");
+          tempAccountText.value = accountCopyBtn[index].previousElementSibling.children[1].textContent.replaceAll('-', '');
+          tempAccountText.style.cssText = "position:absolute;left:-9999px;top:-9999px";
+          document.body.appendChild(tempAccountText);
+          tempAccountText.select();
+          document.execCommand("copy");
+          alert(`${accountCopyBtn[index].previousElementSibling.children[0].textContent} 계좌 복사 완료!`);
+        } catch(err) {
+          alert(`계좌 복사 실패 (${err})! 아래 연락처로 문의 부탁드립니다!`);
+        }
+
+        document.body.removeChild(tempAccountText);
       }
     );
   });
