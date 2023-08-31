@@ -2,6 +2,7 @@ const body = document.querySelector('body');
 const gpzs = document.querySelectorAll('.gallery-photo-zone');
 const imageView = document.querySelector('.image-view');
 const imageBox = document.querySelector('.image-box');
+const imageContent = document.querySelector('.image-content');
 const nextBtn = document.getElementById('next-btn');
 const prevBtn = document.getElementById('prev-btn');
 const groomAccountBtn = document.getElementById('groom-account-btn');
@@ -11,6 +12,7 @@ const brideAccountModal = document.querySelector('.bride-account-modal');
 const groomModalAccountClose = document.getElementById('groom-modal-account-close');
 const brideModalAccountClose = document.getElementById('bride-modal-account-close');
 const accountCopyBtn = document.querySelectorAll('.modal-account-copy-btn');
+const shareLinkCopy = document.getElementById('share-link-copy');
 
 let currentImageIdx = 0;
 
@@ -32,7 +34,7 @@ gpzs.forEach((btn, index) => {
 });
 
 function currentImageDisplay() {
-  imageBox.getElementsByTagName('img')[0].src = `img/pictures/org/gallery_0${currentImageIdx}.jpg`;
+  imageContent.src = `img/pictures/org/gallery_0${currentImageIdx}.jpg`;
 }
 
 prevBtn.addEventListener('click', () => {
@@ -108,4 +110,34 @@ accountCopyBtn.forEach((e, index) => {
       }
     );
   });
+});
+
+shareLinkCopy.addEventListener('click', () => {
+  window.navigator.clipboard.writeText(document.location.href).then(
+    () => {
+      alert('주소 복사 완료!');
+    },
+    () => {
+      try {
+        const tempShareLink = document.createElement("textarea");
+        tempShareLink.value = document.location.href;
+        tempShareLink.style.cssText = "position:absolute;left:-9999px;top:-9999px";
+        document.body.appendChild(tempShareLink);
+        tempShareLink.select();
+        document.execCommand("copy");
+        alert('주소 복사 완료!');
+      } catch(err) {
+        alert(`주소 복사 실패 (${err})! 아래 연락처로 문의 부탁드립니다!`);
+      }
+
+      document.body.removeChild(tempShareLink);
+    }
+  );
+});
+
+Kakao.init('d529712395e6de6eec8b3ff362c26908');
+
+Kakao.Share.createCustomButton({
+  container: '#kakaotalk-sharing-btn',
+  templateId: 97955,
 });

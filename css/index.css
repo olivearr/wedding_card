@@ -64,6 +64,7 @@ footer {
   background-color: #B9B9B9;
   box-sizing: border-box;
   padding: 10px 0;
+  text-align: center;
 }
 
 footer p {
@@ -73,7 +74,6 @@ footer p {
   font-family: 'MaruBuri-Regular';
   font-size: 14px;
   color: white;
-  text-align: center;
 }
 
 #wedding-card {
@@ -91,4 +91,25 @@ footer p {
   padding: 0 0.5em;
   border-bottom: 1px solid #4A73B8;
   margin: 30px 0 20px 0;
+}
+
+.share-h {
+  font-family: 'MaruBuri-Regular';
+  font-size: 17px;
+  color: #3C495F;
+}
+
+.share-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin: 5px 0;
+}
+
+.share-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
 }

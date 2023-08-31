@@ -76,10 +76,11 @@
   z-index: 99;
 }
 
-.image-box > img {
+.image-content {
   width: 100%;
   height: auto;
   max-height: 90vh;
+  object-fit: contain;
 }
 
 #prev-btn, #next-btn{
