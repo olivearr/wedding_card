@@ -1,8 +1,14 @@
 @font-face {
   font-family: 'KCC-eunyoung';
-  src: url('../fonts/KCC-eunyoung-Regular.woff') format('woff');
+  src: url('../fonts/subset-KCC-eunyoung-Regular.eot');
+  src: url('../fonts/subset-KCC-eunyoung-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/subset-KCC-eunyoung-Regular.woff2') format('woff2'),
+      url('../fonts/subset-KCC-eunyoung-Regular.woff') format('woff'),
+      url('../fonts/subset-KCC-eunyoung-Regular.ttf') format('truetype'),
+      url('../fonts/subset-KCC-eunyoung-Regular.svg#KCC-eunyoung-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 @font-face {
@@ -10,6 +16,7 @@
   src: url('../fonts/GangwonEduHyeonokT_OTFMediumA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 @font-face {
@@ -17,6 +24,7 @@
   src: url('../fonts/210-Soopsokeseo-R.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 @font-face {
@@ -24,6 +32,7 @@
   src: url('../fonts/MaruBuri-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 @font-face {
@@ -31,6 +40,7 @@
   src: url('../fonts/MaruBuri-SemiBold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 @font-face {
@@ -38,6 +48,7 @@
   src: url('../fonts/MaruBuri-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 body {
