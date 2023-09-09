@@ -54,7 +54,7 @@
 body {
   margin: 0;
   background-color: #333;
-  touch-action: pan-y;
+  /*touch-action: pan-y;*/
 
   --360-view-width-ratio: calc(360 / 390);
   --430-view-width-ratio: calc(430 / 390);
